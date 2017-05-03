@@ -137,6 +137,7 @@ sys.usb.rps_mask=10
 persist.sys.usb.config.extra=none
 
 # Storage
+ro.frp.pst=/dev/block/bootdevice/by-name/config
 ro.sys.sdcardfs=true
 
 # WiFi
