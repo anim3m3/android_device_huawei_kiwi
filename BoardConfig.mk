@@ -73,6 +73,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
+# Device Name 
+DEVICE24_NAME := Huawei GR5 2016 / Huawei Honor 5X
+
 # Camera
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -180,6 +183,11 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_USES_QCOM_WCNSS_QMI := true
 TARGET_USES_WCNSS_CTRL := true
+
+# Optimizations 
+WITH_DEXPREOPT=true
+O3_OPTS := true
+GRAPHITE_OPTS := true
 
 # inherit from the proprietary version
 -include vendor/huawei/kiwi/BoardConfigVendor.mk
