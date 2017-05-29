@@ -186,5 +186,26 @@ WITH_DEXPREOPT=true
 O3_OPTS := true
 GRAPHITE_OPTS := true
 
+# TWRP
+RECOVERY_VARIANT := twrp
+TW_EXCLUDE_SUPERSU := true
+#TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/twrp.fstab
+TW_THEME := portrait_hdpi
+RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TWHAVE_SELINUX := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
+TW_INPUT_BLACKLIST := "accelerometer"
+TW_NO_EXFAT_FUSE := false
+TW_INCLUDE_NTFS_3G := true
+TW_INCLUDE_CRYPTO := true
+TARGET_HW_DISK_ENCRYPTION := true
+
 # inherit from the proprietary version
 -include vendor/huawei/kiwi/BoardConfigVendor.mk
