@@ -186,5 +186,8 @@ WITH_DEXPREOPT=true
 O3_OPTS := true
 GRAPHITE_OPTS := true
 
+# Build 
+TTX24_BUILDTYPE := GU-OK-LAEW
+
 # inherit from the proprietary version
 -include vendor/huawei/kiwi/BoardConfigVendor.mk
